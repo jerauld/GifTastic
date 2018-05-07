@@ -17,7 +17,15 @@ h1 {
 
 #add-gif {
     background-color: #eba23c;
-    
+    cursor: pointer;
+}
+
+.cartoon {
+    cursor: pointer;
+}
+
+.gif {
+    cursor: pointer;
 }
 
 p {
