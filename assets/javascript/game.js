@@ -3,7 +3,7 @@ var topics = ["Rugrats", "Dexter's Laboratory", "Futurama", "Batman: The Animate
 function displayCartoonGif() {
     var cartoon = $(this).attr("data-cartoon");
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + cartoon + "&api_key=0QQoyLgizJlPEqMrOEud4jT5wEzoiLKY&limit=10"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cartoon + "&api_key=0QQoyLgizJlPEqMrOEud4jT5wEzoiLKY&limit=10"
 
     $.ajax({
     url: queryURL,
