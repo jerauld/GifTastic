@@ -19,10 +19,11 @@ function displayCartoonGif() {
             console.log("In Here");
             var gifImage = $("<img>");
             gifImage.attr("class", "img-fluid gif");
-            gifImage.attr("src", results[i].images.fixed_height.url);
-            gifImage.attr("data-animate", results[i].images.fixed_height.url);
+            // Still must load first per HW instructions.
+            gifImage.attr("src", results[i].images.fixed_height_still.url);
             gifImage.attr("data-still", results[i].images.fixed_height_still.url);
-            gifImage.attr("data-state", "animate");
+            gifImage.attr("data-animate", results[i].images.fixed_height.url);
+            gifImage.attr("data-state", "still");
 
             var ratingP = $("<p>").text(" rating: " + results[i].rating).attr("class", "rating");
 
@@ -41,12 +42,12 @@ function displayCartoonGif() {
 $(document).on("click", ".gif", function() {
     var state = $(this).attr("data-state");
 
-    if (state === "animate") {
-        $(this).attr("src", $(this).attr("data-still"));
-        $(this).attr("data-state", "still");
-    } else {
+    if (state === "still") {
         $(this).attr("src", $(this).attr("data-animate"));
         $(this).attr("data-state", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
     }
 
 });
