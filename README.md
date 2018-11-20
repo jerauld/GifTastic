@@ -1,10 +1,14 @@
 # GifTastic
 
-**Overview**
+## Overview
 
 90s Cartoon Gifs was created for the Giftastic homework assignment for Berkeley Coding Bootcamp using the GIPHY API to make a dynamic web page that populates with gifs of our choice by calling the GIPHY API and using JavaScript and jQuery to change the HTML of our site.
 
-**Requirements**
+## Demo (via GitHub Pages)
+
+https://julienshim.github.io/GifTastic/
+
+## Requirements
 
 - Create an array of strings, each one related to a topic that interests us. Save it to a variable called `topics`.
     * I chose the 90s Cartoon theme.
@@ -15,8 +19,12 @@
     * This day is provided by the GIPHY API.
 - Add a form to the page that takes a value from a user input box and adds it into your `topics` array. Then make a function call that takes each topic in the array remakes the button on the page.
 
-**Bonus Goals**
+## Bonus Goals
 
 1. Ensure your app is fully mobile responsive.
 2. Allow users to request additional gifs to be added to the page.
     *Each request should ADD 10 gifs to the page, NOT overwrite the existing gifs.
+    
+## Screenshot
+
+<img src="https://raw.githubusercontent.com/julienshim/GifTastic/master/assets/images/screenshot.png" width="500" />
